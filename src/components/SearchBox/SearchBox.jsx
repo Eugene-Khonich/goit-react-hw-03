@@ -2,10 +2,11 @@ import css from './SearchBox.module.css';
 
 const SearchBox = ({ filter, setFilter }) => {
   return (
-    <div className={css.container}>
-      <label htmlFor="find">
+    <div>
+      <label htmlFor="find" className={css.label}>
         <span>Find contacts by name</span>
         <input
+          className={css.input}
           type="text"
           name="find"
           value={filter}
