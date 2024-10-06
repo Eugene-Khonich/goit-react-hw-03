@@ -1,4 +1,5 @@
 import './App.module.css';
+import contacts from '../../contacts.json';
 import ContactForm from '../ContactForm/ContactForm';
 import SearchBox from '../SearchBox/SearchBox';
 import ContactList from '../ContactList/ContactList';
@@ -10,7 +11,7 @@ const App = () => {
       <div>
         <ContactForm />
         <SearchBox />
-        <ContactList />
+        <ContactList contacts={contacts} />
       </div>
     </div>
   );

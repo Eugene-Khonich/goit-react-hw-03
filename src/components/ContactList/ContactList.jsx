@@ -1,9 +1,15 @@
 import Contact from '../Contact/Contact';
-const ContactList = () => {
+const ContactList = ({ contacts }) => {
   return (
-    <div>
-      <Contact />
-    </div>
+    <ul>
+      {contacts.map(item => {
+        return (
+          <li key={item.id}>
+            <Contact name={item.name} number={item.number} />
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 

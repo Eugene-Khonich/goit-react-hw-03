@@ -1,8 +1,8 @@
-const Contact = () => {
+const Contact = ({ name, number }) => {
   return (
     <div>
-      <h3>Name</h3>
-      <p>Phone</p>
+      <h3>{name}</h3>
+      <p>{number}</p>
       <button>Delete</button>
     </div>
   );
