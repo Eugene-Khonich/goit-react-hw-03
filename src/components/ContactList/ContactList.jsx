@@ -7,7 +7,7 @@ const ContactList = ({ filteredUsers }) => {
       {filteredUsers.map(item => {
         return (
           <li key={item.id} className={css.card}>
-            <Contact name={item.name} number={item.number} />
+            <Contact name={item.name} number={item.number} id={item.id} />
             <button className={css.btn}>Delete</button>
           </li>
         );

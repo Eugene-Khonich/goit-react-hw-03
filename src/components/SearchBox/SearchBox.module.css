@@ -7,6 +7,6 @@
   gap: 4px;
 }
 .input {
-  max-width: 360px;
+  min-width: 360px;
   padding-left: 8px;
 }
