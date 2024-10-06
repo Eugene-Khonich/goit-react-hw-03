@@ -1,10 +1,10 @@
 import css from './ContactLIst.module.css';
 import Contact from '../Contact/Contact';
 
-const ContactList = ({ contacts }) => {
+const ContactList = ({ filteredUsers }) => {
   return (
     <ul className={css.list}>
-      {contacts.map(item => {
+      {filteredUsers.map(item => {
         return (
           <li key={item.id} className={css.card}>
             <Contact name={item.name} number={item.number} />
