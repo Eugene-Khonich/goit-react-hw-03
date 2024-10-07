@@ -2,7 +2,7 @@ import css from './Contact.module.css';
 import { MdPerson } from 'react-icons/md';
 import { MdPhone } from 'react-icons/md';
 
-const Contact = ({ name, number }) => {
+const Contact = ({ name, number, deleteContacts, id }) => {
   return (
     <div className={css.card}>
       <h3 className={css.name}>
@@ -13,6 +13,15 @@ const Contact = ({ name, number }) => {
         <MdPhone />
         {number}
       </p>
+      <button
+        type="button"
+        onClick={() => {
+          deleteContacts(id);
+        }}
+        className={css.btn}
+      >
+        Delete
+      </button>
     </div>
   );
 };

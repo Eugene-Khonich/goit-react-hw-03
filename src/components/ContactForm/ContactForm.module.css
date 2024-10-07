@@ -25,3 +25,6 @@
 .btn {
   max-width: 260px;
 }
+.errorMsg {
+  color: red;
+}
