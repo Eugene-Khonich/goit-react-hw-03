@@ -4,15 +4,17 @@ import { MdPhone } from 'react-icons/md';
 
 const Contact = ({ name, number, deleteContacts, id }) => {
   return (
-    <div className={css.card}>
-      <h3 className={css.name}>
-        <MdPerson />
-        {name}
-      </h3>
-      <p className={css.number}>
-        <MdPhone />
-        {number}
-      </p>
+    <li className={css.card}>
+      <div>
+        <h3 className={css.name}>
+          <MdPerson />
+          {name}
+        </h3>
+        <p className={css.number}>
+          <MdPhone />
+          {number}
+        </p>
+      </div>
       <button
         type="button"
         onClick={() => {
@@ -22,7 +24,7 @@ const Contact = ({ name, number, deleteContacts, id }) => {
       >
         Delete
       </button>
-    </div>
+    </li>
   );
 };
 
