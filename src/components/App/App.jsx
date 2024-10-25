@@ -39,6 +39,7 @@ const App = () => {
   return (
     <div>
       <h1>Phonebook</h1>
+      <p>Hello world</p>
       <div>
         <ContactForm addContact={addContact} />
         <SearchBox filter={filter} setFilter={setFilter} />
